@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 
 browser = webdriver.Chrome()
-# TESTANDO GIT 2
+# TESTANDO GIT 3
 browser.maximize_window()
 browser.get("https://demo.applitools.com/")
 time.sleep(1)
