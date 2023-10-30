@@ -7,7 +7,7 @@ browser = webdriver.Chrome()
 browser.maximize_window()
 browser.get("https://www.saucedemo.com/")
 time.sleep(1)
-
+# 123
 # find_element()
 # username = browser.find_element(By.ID, "user-name")
 # password = browser.find_element(By.ID, "password")
