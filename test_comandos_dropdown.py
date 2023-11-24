@@ -1,10 +1,9 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 browser.implicitly_wait(12)
 
 browser.maximize_window()

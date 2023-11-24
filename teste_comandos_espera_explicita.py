@@ -4,16 +4,16 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 
 browser.maximize_window()
 browser.get("https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver")
 wait = WebDriverWait(browser, 30)
 
 # alert_is_present()
-browser.find_element(By.ID, "alert").click()
-wait.until(EC.alert_is_present())
-time.sleep(3)
+# browser.find_element(By.ID, "alert").click()
+# wait.until(EC.alert_is_present())
+# time.sleep(3)
 
 # text_to_be_present_in_element()
 browser.find_element(By.ID, "populate-text").click()
@@ -41,3 +41,5 @@ browser.find_element(By.ID, "checkbox").click()
 wait.until(EC.element_to_be_selected((checkbox)))
 assert checkbox.is_selected(), "A checkbox não está selecionada"
 time.sleep(3)
+
+browser.quit()

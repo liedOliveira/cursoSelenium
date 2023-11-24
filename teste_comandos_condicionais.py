@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 # TESTANDO GIT 2
 browser.maximize_window()
 browser.get("https://demo.applitools.com/")

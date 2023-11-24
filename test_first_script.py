@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 
 browser.get("https://www.saucedemo.com/")
 time.sleep(2)

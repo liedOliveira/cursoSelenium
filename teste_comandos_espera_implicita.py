@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-browser = webdriver.Chrome()
+browser = webdriver.Firefox()
 browser.maximize_window()
 browser.implicitly_wait(15)
 
